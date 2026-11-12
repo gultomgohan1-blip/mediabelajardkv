@@ -1,6 +1,5 @@
-KREASI DKV — PLAYFUL CREATIVE REDESIGN v1
-Pembaruan visual untuk sistem pembelajaran yang sudah ada.
-MISI AKTIF: 01 LAYOUT ARCHITECT | 02 FIX THIS DESIGN
+KREASI DKV — CREATIVE QUEST / TWO-MISSION RELEASE
+MISSION 01: LAYOUT ARCHITECT | MISSION 02: FIX THIS DESIGN
 
 ARAH DESAIN YANG SUDAH DISEPAKATI
 1. Sistem belajar hybrid: urutan direkomendasikan, tetapi materi dan praktik dapat dibuka kembali.
@@ -13,7 +12,6 @@ ARAH DESAIN YANG SUDAH DISEPAKATI
 ISI PAKET FRONTEND
 - index.html
 - style.css
-- kreasi-design-system.css (lapisan visual baru; wajib diunggah bersama style.css)
 - script.js (dipertahankan byte-for-byte; jangan diedit untuk fitur baru)
 - studio.js
 - mission-hub.js
@@ -34,7 +32,7 @@ APA YANG BARU PADA PHASE 2
 
 CARA UPLOAD KE GITHUB PAGES
 1. Ekstrak ZIP.
-2. Unggah semua file frontend langsung ke ROOT repository (jangan ke subfolder): index.html, style.css, kreasi-design-system.css, script.js, studio.js, mission-hub.js, fix-this-design.js, app-navigation.js, portfolio.js.
+2. Unggah semua file frontend langsung ke ROOT repository (jangan ke subfolder): index.html, style.css, script.js, studio.js, mission-hub.js, fix-this-design.js, app-navigation.js, portfolio.js.
 3. Commit changes.
 4. Setelah GitHub Pages selesai deploy, refresh dengan Ctrl+Shift+R.
 
@@ -84,13 +82,3 @@ UPDATE: PROJECT & MATERIALS READABILITY FIX
 - Fixed chapter-specific discussion-card surfaces in dark mode; earlier chapter-ID rules kept pastel backgrounds under light text.
 - Fixed chapter swatch labels/headings, image-use notes, chapter completion controls, and lesson table headers/cells.
 - The quiz/SUS logic, endpoint configuration, and script.js are unchanged.
-
-
-PEMBARUAN VISUAL: KREASI DKV PLAYFUL CREATIVE DESIGN SYSTEM — v1
-- Ditambahkan kreasi-design-system.css sebagai lapisan desain visual yang dimuat setelah style.css.
-- Lapisan ini memperbarui palet warna playful, tipografi, kartu dashboard, navigasi, halaman materi, Design Studio, kuis/SUS, dan responsivitas.
-- Lapisan visual menghormati prefers-reduced-motion dan menggunakan animasi CSS ringan.
-- index.html hanya menambahkan stylesheet visual baru dan memperbarui label branding; tidak mengubah ID, form, ataupun struktur interaksi.
-- Seluruh file JavaScript lama tetap dipertahankan; khusus script.js harus sama byte-for-byte dengan versi dasar.
-- Upload tambahan yang wajib disertakan di ROOT repository adalah kreasi-design-system.css.
-- Redesign ini tidak menambahkan dashboard guru, sistem login baru, atau backend baru.

@@ -1,4 +1,4 @@
-PANDUAN UPLOAD — KREASI DKV PLAYFUL CREATIVE REDESIGN v1
+PANDUAN UPLOAD — KREASI DKV / 2 MISI + PORTOFOLIO CONTRAST FIX
 
 1. Download dan ekstrak ZIP.
 2. Buka repository GitHub Pages.
@@ -7,14 +7,13 @@ PANDUAN UPLOAD — KREASI DKV PLAYFUL CREATIVE REDESIGN v1
 5. Pilih file berikut dari folder hasil ekstrak dan unggah langsung ke root repository:
    - index.html
    - style.css
-   - kreasi-design-system.css
    - script.js
    - studio.js
    - mission-hub.js
    - fix-this-design.js
    - app-navigation.js
    - portfolio.js
-6. Jangan membuat subfolder saat mengunggah. Pastikan kreasi-design-system.css ikut terunggah di folder ROOT, karena index.html memuat file tersebut setelah style.css.
+6. Jangan membuat subfolder saat mengunggah.
 7. Klik Commit changes.
 8. Tunggu status deployment GitHub Pages berhasil.
 9. Buka website dan tekan Ctrl+Shift+R.
@@ -27,4 +26,12 @@ CATATAN
 
 Versi ini hanya menampilkan dua misi aktif. Upload semua file frontend dari ZIP langsung ke root repository. Jangan upload file backend/rahasia atau endpoint administrator ke repository publik.
 
-Redesign ini hanya mengubah presentasi visual. Sistem lama, alur, dan integrasi kuis/SUS tetap dipertahankan.
+
+PEMBARUAN VISUAL v2
+- Halaman tiap bab sekarang memiliki peta visual SVG mandiri dengan animasi ringan.
+- Submateri dapat dibuka melalui panel accordion; teks asli tetap tersedia di dalamnya.
+- Tidak membutuhkan file gambar tambahan atau GIF eksternal.
+- Unggah index.html dan style.css dari paket ini ke ROOT repository untuk memperbarui tampilan.
+- Jangan mengganti file JavaScript lama jika tidak sedang memperbarui fitur.
+
+Paket v2: unggah index.html dan style.css dari paket patch ke ROOT repository. Seluruh materi dan teks asli dipertahankan; submateri menggunakan native details/summary agar lebih mudah dijelajahi.
