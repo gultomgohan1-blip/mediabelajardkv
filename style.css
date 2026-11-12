@@ -2946,6 +2946,168 @@ html.dark .mission-focus-note p { color:#E2E3F2; }
 @media(max-width:620px) { .mission-focus-note { padding:13px;gap:10px; } .mission-focus-note p { font-size:.67rem; } }
 
 /* =====================================================================
+   KREASI DKV — PROFESSIONAL UI REFINEMENT
+   A calmer editorial system: fewer competing surfaces, sharper hierarchy,
+   consistent spacing, and stronger accessible contrast in every module.
+   ===================================================================== */
+:root {
+  --pro-ink:#172033;
+  --pro-muted:#5C667A;
+  --pro-line:#DCE2EB;
+  --pro-surface:#FFFFFF;
+  --pro-soft:#F5F7FB;
+  --pro-brand:#304CC9;
+  --pro-brand-dark:#203AAB;
+  --pro-highlight:#FFB547;
+  --pro-radius:18px;
+  --pro-shadow:0 12px 32px rgba(26,37,62,.08);
+}
+html.dark {
+  --pro-ink:#F5F7FC;
+  --pro-muted:#C5CCDA;
+  --pro-line:#3D4760;
+  --pro-surface:#20283A;
+  --pro-soft:#293347;
+  --pro-brand:#9DAEFF;
+  --pro-brand-dark:#C4CEFF;
+  --pro-highlight:#FFD27B;
+  --pro-shadow:0 14px 34px rgba(0,0,0,.24);
+}
+html { scroll-padding-top:104px; }
+body { letter-spacing:.005em; }
+body::before { opacity:.72; }
+
+/* Shell */
+header.sticky { padding-inline:clamp(12px,2.2vw,28px)!important; }
+.site-topnav { min-height:68px; border-radius:0 0 var(--pro-radius) var(--pro-radius)!important; box-shadow:0 7px 22px rgba(26,37,62,.07)!important; }
+.brand-mark { box-shadow:3px 3px 0 rgba(48,76,201,.18); }
+.lms-workspace { max-width:1460px; gap:20px; padding:22px clamp(14px,2.4vw,32px) 64px; }
+.lms-sidebar { border-radius:var(--pro-radius); box-shadow:var(--pro-shadow); }
+.sidebar-link { border-radius:12px!important; min-height:42px; }
+.sidebar-link:hover { background:var(--pro-soft)!important; }
+.sidebar-link.is-active { box-shadow:inset 3px 0 0 var(--pro-brand); }
+.sidebar-progress-card { border-radius:14px!important; }
+
+/* Reusable content surfaces */
+.identity-card,
+.course-intro,
+.discussion-panel,
+.design-studio-shell,
+.studio-panel,
+.portfolio-hub-card,
+.mission-hub-hero,
+.fix-mission-panel {
+  border-radius:var(--pro-radius)!important;
+  box-shadow:var(--pro-shadow);
+}
+.identity-card,
+.discussion-panel,
+.portfolio-hub-card { border-color:var(--pro-line)!important; }
+.course-intro,
+.discussion-panel,
+.portfolio-hub-card { background:var(--pro-surface)!important; }
+.discussion-panel { padding:clamp(22px,3vw,38px)!important; }
+.discussion-panel :is(h3,h4,h5),
+.identity-card h1,
+.portfolio-hub-card :is(h4,h5),
+.course-intro :is(h2,h3,h4) { letter-spacing:-.035em; }
+.discussion-panel > p:first-of-type,
+.course-hero-lede,
+.welcome-lede { max-width:68ch; line-height:1.78!important; }
+
+/* Clear, consistent interaction language */
+button,
+.course-cta,
+.tab-btn,
+.portfolio-save-btn,
+.portfolio-submit-btn { font-weight:800!important; }
+.course-cta-primary,
+#btn-mulai,
+#btn-to-kuis,
+#btn-next,
+#btn-kirim,
+.portfolio-save-btn,
+.mission-start-button,
+.fix-back-button {
+  background:var(--pro-brand)!important;
+  color:#FFFFFF!important;
+  box-shadow:0 8px 18px rgba(48,76,201,.20)!important;
+}
+.course-cta-primary:hover,
+#btn-mulai:hover,
+#btn-to-kuis:hover,
+#btn-next:hover,
+#btn-kirim:hover,
+.portfolio-save-btn:hover,
+.mission-start-button:hover,
+.fix-back-button:hover {
+  background:var(--pro-brand-dark)!important;
+  transform:translateY(-2px)!important;
+}
+.course-cta-secondary,
+.tab-btn:not(.text-white) { background:var(--pro-soft)!important; border-color:var(--pro-line)!important; color:var(--pro-ink)!important; }
+.tab-btn.text-white { background:var(--pro-brand)!important; }
+input,select,textarea { border-radius:12px!important; }
+
+/* Material page: use restrained hierarchy and orderly reading rhythm */
+.course-hero-grid { min-height:390px!important; }
+.course-hero-copy { padding-block:clamp(8px,1.6vw,20px); }
+.course-pill,.identity-chip { background:rgba(48,76,201,.10)!important; color:var(--pro-brand)!important; border:1px solid rgba(48,76,201,.18); }
+.course-highlights { gap:12px!important; }
+.course-highlight-card { border-radius:14px!important; border:1px solid rgba(23,32,51,.10); box-shadow:0 7px 18px rgba(26,37,62,.07); }
+.course-visual-card { border-radius:14px!important; overflow:hidden; border:1px solid var(--pro-line)!important; box-shadow:none!important; }
+.chapter-nav-wrap { border-top:1px solid var(--pro-line); padding-top:28px; }
+.discussion-card,.discussion-highlight,.lesson-check { border-radius:14px!important; }
+.chapter-visual { border-radius:16px!important; overflow:hidden; border:1px solid var(--pro-line); }
+.chapter-swatch-card { border-radius:14px!important; overflow:hidden; }
+
+/* Studio, challenges, and student portfolio */
+.design-studio-shell { border-radius:var(--pro-radius)!important; }
+.studio-tabs { gap:8px!important; }
+.studio-tab { border-radius:12px!important; }
+.mission-hub-hero,
+.fix-mission-panel { box-shadow:var(--pro-shadow)!important; }
+.mission-featured-card,
+.mission-roadmap-card,
+.fix-task-card,
+.fix-poster-card { border-radius:14px!important; }
+.mission-board-counter,
+.mission-hub-meta span,
+.fix-live-pill { border-radius:999px!important; }
+.fix-choice-button { border-radius:12px!important; }
+.project-brief-card,.project-rubric-card { border-radius:15px!important; }
+.portfolio-hub-card { margin-top:22px!important; }
+.portfolio-form-fields :is(input,select,textarea) { background:var(--pro-soft)!important; border:1px solid var(--pro-line)!important; color:var(--pro-ink)!important; }
+.portfolio-file-picker { border-radius:14px!important; border-style:dashed!important; border-color:var(--pro-line)!important; background:var(--pro-soft)!important; }
+.portfolio-preview-stage { border-radius:15px!important; }
+.portfolio-gallery-grid > * { border-radius:14px!important; }
+
+/* Dark theme keeps the same calm separation and readable secondary text. */
+html.dark .course-intro,
+html.dark .discussion-panel,
+html.dark .portfolio-hub-card { background:var(--pro-surface)!important; }
+html.dark .sidebar-link:hover,
+html.dark .course-cta-secondary,
+html.dark .tab-btn:not(.text-white),
+html.dark .portfolio-form-fields :is(input,select,textarea),
+html.dark .portfolio-file-picker { background:var(--pro-soft)!important; }
+html.dark .course-highlight-card { border-color:rgba(255,255,255,.12); }
+
+@media (max-width:860px) {
+  .lms-workspace { padding-inline:14px; }
+  .course-highlights { grid-template-columns:repeat(2,minmax(0,1fr))!important; }
+}
+@media (max-width:560px) {
+  .site-topnav { min-height:62px; border-radius:0 0 14px 14px!important; }
+  .lms-workspace { padding:14px 12px 92px; }
+  .identity-card,.discussion-panel { padding:20px!important; border-radius:15px!important; }
+  .course-hero-title { font-size:clamp(2.2rem,11vw,3.1rem)!important; }
+  .course-highlights { gap:8px!important; }
+  .course-highlight-card { min-height:104px!important; padding:13px!important; }
+  .course-cta { width:100%; justify-content:space-between; }
+}
+
+/* =====================================================================
    KREASI DKV — PROJECT + MATERIALS CONTRAST AUDIT (FINAL OVERRIDE)
    Fixes cascading theme collisions inside the project cards and chapter
    callouts. Keep this block last so inherited shell colors cannot win.
